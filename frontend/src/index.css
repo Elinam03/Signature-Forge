@@ -1,0 +1,192 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* Tailwind v4 theme configuration */
+@theme {
+  --color-bg-primary: #0a0a0f;
+  --color-bg-secondary: #12121a;
+  --color-bg-tertiary: #1a1a25;
+  --color-bg-elevated: #222230;
+
+  --color-accent-green: #00ff88;
+  --color-accent-pink: #ff00aa;
+  --color-accent-cyan: #00ccff;
+  --color-accent-yellow: #ffcc00;
+
+  --color-text-primary: #f0f0f5;
+  --color-text-secondary: #c0c0d0;
+  --color-text-muted: #8888a0;
+
+  --color-border-subtle: #2a2a35;
+  --color-border-default: #3a3a45;
+
+  --shadow-glow-green: 0 0 20px rgba(0, 255, 136, 0.25);
+  --shadow-glow-pink: 0 0 20px rgba(255, 0, 170, 0.25);
+  --shadow-glow-cyan: 0 0 20px rgba(0, 204, 255, 0.25);
+}
+
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #12121a;
+  --bg-tertiary: #1a1a25;
+  --bg-elevated: #222230;
+
+  --accent-green: #00ff88;
+  --accent-pink: #ff00aa;
+  --accent-cyan: #00ccff;
+  --accent-yellow: #ffcc00;
+
+  --text-primary: #f0f0f5;
+  --text-secondary: #c0c0d0;
+  --text-muted: #8888a0;
+
+  --border-subtle: #2a2a35;
+  --border-default: #3a3a45;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-default);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-green);
+}
+
+/* Monaco editor theme overrides */
+.monaco-editor {
+  border-radius: 0 0 8px 8px;
+}
+
+.monaco-editor .margin {
+  background: var(--bg-primary) !important;
+}
+
+.monaco-editor .monaco-editor-background {
+  background: var(--bg-primary) !important;
+}
+
+/* Force Monaco editor text to be visible - override any dark tokens */
+.monaco-editor .view-lines,
+.monaco-editor .view-line,
+.monaco-editor .view-line span,
+.monaco-editor .mtk1 {
+  color: #E0E0E0 !important;
+}
+
+/* Specific Monaco token overrides for better visibility */
+.monaco-editor .mtk3 { color: #7EC699 !important; }  /* comments/address */
+.monaco-editor .mtk4 { color: #E8B87A !important; }  /* strings/hex */
+.monaco-editor .mtk5 { color: #79B8FF !important; }  /* keywords */
+.monaco-editor .mtk6 { color: #5ED9C5 !important; }  /* registers */
+.monaco-editor .mtk7 { color: #C5D8A8 !important; }  /* numbers */
+.monaco-editor .mtk8 { color: #A5D6FF !important; }  /* memory */
+.monaco-editor .mtk9 { color: #D4A0FF !important; }  /* operators */
+.monaco-editor .mtk10 { color: #FFD700 !important; } /* jumps */
+.monaco-editor .mtk11 { color: #00D9FF !important; } /* calls */
+.monaco-editor .mtk12 { color: #FF6B9D !important; } /* returns */
+.monaco-editor .mtk13 { color: #B8FF57 !important; } /* labels */
+.monaco-editor .mtk14 { color: #F0E68C !important; } /* mov instructions */
+.monaco-editor .mtk15 { color: #4FC3F7 !important; } /* stack ops */
+.monaco-editor .mtk16 { color: #FF8C42 !important; } /* compare */
+
+/* Ensure line numbers are visible */
+.monaco-editor .line-numbers {
+  color: #6a6a7a !important;
+}
+
+.monaco-editor .line-numbers.active-line-number {
+  color: #B8FF57 !important;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px var(--accent-green);
+  }
+  50% {
+    box-shadow: 0 0 20px var(--accent-green);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Utility classes */
+.font-mono {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+.glow-green {
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.25);
+}
+
+.glow-pink {
+  box-shadow: 0 0 20px rgba(255, 0, 170, 0.25);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(0, 204, 255, 0.25);
+}
+
+/* Electron title bar - drag region */
+.drag-region {
+  -webkit-app-region: drag;
+  app-region: drag;
+}
+
+.no-drag {
+  -webkit-app-region: no-drag;
+  app-region: no-drag;
+}
+
+/* Title bar styling */
+.title-bar {
+  -webkit-app-region: drag;
+  app-region: drag;
+}
